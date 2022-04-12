@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up Page</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="firstcontainer">
+        <div class="last-wrapper">
+            <h4>Fiber</h4>
+
+            <h1>Create your Fiber account</h1>
+
+            <form>
+                <div>
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="John Doe" required> 
+                </div>
+        
+                <div>
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id = "email" placeholder="John@example.com" required>
+                </div>
+        
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" pattern=".{8,}" placeholder="At least 8 character" required title="At least 8 character">
+                </div>
+        
+                <div class="agree">
+                    <input type="checkbox"  id="agreed" name="agreed" required>
+                    <label for="agreed"> By creating an fiber, you agree to the <a href="#">Terms and Conditions.</a></label>
+                </div>
+        
+                <div>
+                    <input  id= "submit" type="submit" value="Create a Fiber Account">
+                </div>
+
+                <div>
+                    <p>Already have an account? <a href="#">Sign in</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="container5">
+            <div>
+                <img src="/Assets/Sign Up Image.png" alt="">
+            </div>
+
+            <h1>Unparalled Templates</h1>
+            <p>Crafted by a team of professional designers, our template are unparalled in the market.</p>
+        </div>
+
+        
+    </div>
+</body>
+</html>
