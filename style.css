@@ -439,6 +439,9 @@ footer .wrapper .contain2 {
     display: flex;
     margin-left: auto;
   }
+  .wrapper1 nav ul li {
+    display: none;
+  }
   .hero .container {
     display: -webkit-box;
     display: -ms-flexbox;

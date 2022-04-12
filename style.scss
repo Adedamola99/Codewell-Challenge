@@ -411,6 +411,13 @@ footer {
             margin-left: auto;
         }
         
+        nav {
+            ul {
+                li{
+                    display: none;
+                }
+            }
+        }
         
     }
 
