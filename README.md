@@ -8,7 +8,7 @@
     <ul>
       <li>The Challenge</li>
       <li>Screenshot(s)</li>
-      <li>Links</li>
+      <li>Link(s)</li>
     </ul>
   </li>
   <li>My Process
