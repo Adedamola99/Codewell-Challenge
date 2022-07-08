@@ -1,4 +1,4 @@
-# Codewell's Responsive Website Challenge.
+# Codewell's Responsive Website Challenge
 
 <p>This is a solution to the codwell responsive website challenge on codwell.cc. They help you improve your Html and Css coding skills by building realistic projects.</p>
 <h1>Table of Content</h1>
