@@ -9,6 +9,11 @@
   --secondary-color: #4D13D1;
   --paragraph-color: #6D6D6C;
   --fontfamily: Verdana, Geneva, Tahoma, sans-serif;
+  --header-fs: 2.7rem;
+  --text-fs: 1.5rem;
+  --p-fs: 1.1rem;
+  --footer-header-fs: 1.1rem;
+  --footer-text-fs: .9rem;
 }
 
 header {
@@ -21,7 +26,7 @@ header .logo {
   font-weight: 900;
   text-decoration: none;
   color: black;
-  font-size: 1.1em;
+  font-size: 1.1rem;
 }
 
 header .wrapper1 {
@@ -68,7 +73,7 @@ header .wrapper1 nav ul li {
 header .wrapper1 nav ul li a {
   text-decoration: none;
   color: black;
-  font-size: 18px;
+  font-size: 1.1rem;
 }
 
 header .wrapper1 nav ul .sign-up {
@@ -119,12 +124,12 @@ header .wrapper1 nav ul .sign-in {
 
 .hero .container .left-col h1 {
   font-weight: bolder;
-  font-size: 3.6em;
+  font-size: var(--header-fs);
   line-height: 1em;
 }
 
 .hero .container .left-col p {
-  font-size: 1.31em;
+  font-size: var(--text-fs);
   line-height: 1.6em;
   color: var(--paragraph-color);
   padding-top: .5em;
@@ -143,7 +148,7 @@ header .wrapper1 nav ul .sign-in {
   color: var(--secondary-color);
   font-weight: 900;
   margin-left: 2em;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   text-decoration: none;
   border-bottom: 3px solid var(--secondary-color);
 }
@@ -154,7 +159,7 @@ header .wrapper1 nav ul .sign-in {
   display: flex;
   gap: 2em;
   color: var(--paragraph-color);
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 .hero .container .left-col .card img {
@@ -162,7 +167,7 @@ header .wrapper1 nav ul .sign-in {
 }
 
 .hero .illustration {
-  max-width: 110%;
+  max-width: 100%;
 }
 
 .container2 {
@@ -178,7 +183,7 @@ header .wrapper1 nav ul .sign-in {
 }
 
 .container2 h4 {
-  font-size: 1.5em;
+  font-size: var(--text-fs);
   width: 50%;
 }
 
@@ -192,13 +197,14 @@ header .wrapper1 nav ul .sign-in {
 }
 
 .container2 .grid .description h5 {
-  font-size: 0.8em;
+  font-size: 0.8rem;
   font-weight: 900;
 }
 
 .container2 .grid .description p {
   line-height: 1.2em;
   color: var(--paragraph-color);
+  font-size: var(--p-fs);
 }
 
 .diversify {
@@ -230,7 +236,7 @@ header .wrapper1 nav ul .sign-in {
 }
 
 .diversify .page .page-leftcol h1 {
-  font-size: 2.5em;
+  font-size: var(--header-fs);
   font-weight: 900;
   color: white;
 }
@@ -239,7 +245,7 @@ header .wrapper1 nav ul .sign-in {
   color: #dbd6d6;
   line-height: 1.6em;
   font-weight: 400;
-  font-size: 1.1em;
+  font-size: var(--p-fs);
   width: 80%;
 }
 
@@ -289,6 +295,7 @@ header .wrapper1 nav ul .sign-in {
 .portfolio .grid2 .profile p {
   padding: 2em 0;
   color: var(--paragraph-color);
+  font-size: var(--p-fs);
 }
 
 .portfolio .grid2 .profile .check {
@@ -302,7 +309,7 @@ header .wrapper1 nav ul .sign-in {
   border: 1px solid #DADADA;
   padding: .8em;
   border-radius: .5em;
-  font-size: 13px;
+  font-size: var(--footer-text-fs);
 }
 
 footer {
@@ -320,11 +327,11 @@ footer .wrapper {
 }
 
 footer .wrapper p {
-  font-size: .9em;
+  font-size: var(--footer-text-fs);
 }
 
 footer .wrapper h3 {
-  font-size: 1.1em;
+  font-size: var(--footer-header-fs);
 }
 
 footer .wrapper .contain1 {
@@ -443,6 +450,13 @@ footer .wrapper .contain2 {
 }
 
 @media only screen and (max-width: 1062px) {
+  :root {
+    --header-fs: 2.5rem;
+    --text-fs: 1rem;
+    --p-fs: 1rem;
+    --footer-header-fs: 1rem;
+    --footer-text-fs: .7rem;
+  }
   header .wrapper1 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -491,7 +505,7 @@ footer .wrapper .contain2 {
     color: white;
     display: block;
     padding: .5em;
-    font-size: 1.3em;
+    font-size: 1.3rem;
     text-align: right;
   }
   header .wrapper1 nav ul li a:hover {
@@ -598,6 +612,9 @@ footer .wrapper .contain2 {
 }
 
 @media only screen and (max-width: 960px) {
+  :root {
+    --header-fs: 2rem;
+  }
   header {
     padding: 1.5em 0.6em;
   }
@@ -624,6 +641,16 @@ footer .wrapper .contain2 {
   }
   .firstcontainer .container5 {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  :root {
+    --header-fs: 1.5rem;
+    --text-fs: .7rem;
+    --p-fs: .7rem;
+    --footer-header-fs: .7rem;
+    --footer-text-fs: .5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

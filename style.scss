@@ -8,9 +8,13 @@
         --secondary-color: #4D13D1;
         --paragraph-color: #6D6D6C;
         --fontfamily: Verdana, Geneva, Tahoma, sans-serif;
-    }
 
-    
+        --header-fs: 2.7rem;
+        --text-fs: 1.5rem;
+        --p-fs: 1.1rem;
+        --footer-header-fs: 1.1rem;
+        --footer-text-fs: .9rem;
+    }
 
 
     header{
@@ -22,7 +26,7 @@
             font-weight: 900;
             text-decoration: none;
             color: black;
-            font-size: 1.1em;
+            font-size: 1.1rem;
         }
 
         .wrapper1 {
@@ -55,7 +59,7 @@
                         a{
                             text-decoration: none;
                             color: black;
-                            font-size: 18px;
+                            font-size: 1.1rem;
                         }
                     }
 
@@ -101,12 +105,12 @@
 
                 h1 {
                     font-weight: bolder;
-                    font-size: 3.6em;
+                    font-size: var(--header-fs);
                     line-height: 1em;
                 }
 
                 p{
-                    font-size: 1.31em;
+                    font-size: var(--text-fs);
                     line-height: 1.6em;
                     color: var(--paragraph-color);
                     padding-top: .5em;
@@ -128,7 +132,7 @@
                         color: var(--secondary-color);
                         font-weight: 900;
                         margin-left: 2em;
-                        font-size: 1.2em;
+                        font-size: 1.2rem;
                         text-decoration: none;
                         border-bottom: 3px solid var(--secondary-color);
                         
@@ -139,7 +143,7 @@
                     display: flex;
                     gap: 2em;
                     color: var(--paragraph-color);
-                    font-size: 1em;
+                    font-size: 1rem;
 
                     img{
                         max-width:15px;
@@ -151,7 +155,7 @@
         }
 
         .illustration {
-            max-width: 110%;
+            max-width: 100%;
         }
 
     }
@@ -169,7 +173,7 @@
         }
 
         h4 {
-            font-size: 1.5em;
+            font-size: var(--text-fs);
             width: 50%;
         }
 
@@ -181,13 +185,14 @@
 
             .description {
                 h5 {
-                    font-size: 0.8em;
+                    font-size: 0.8rem;
                     font-weight: 900;
                 }
 
                 p{
                     line-height: 1.2em;
                     color: var(--paragraph-color);
+                    font-size: var(--p-fs);
                 }
 
             }
@@ -215,7 +220,7 @@
                 justify-content: center;
 
                 h1 {
-                    font-size: 2.5em;
+                    font-size: var(--header-fs);
                     font-weight: 900;
                     color: white;
                 }
@@ -224,7 +229,7 @@
                     color: rgb(219, 214, 214);
                     line-height: 1.6em;
                     font-weight: 400;
-                    font-size: 1.1em;
+                    font-size: var(--p-fs);
                     width: 80%;
                 }
 
@@ -269,6 +274,7 @@
                 p {
                     padding: 2em 0;
                     color: var(--paragraph-color);
+                    font-size: var(--p-fs);
                     
                 }
 
@@ -282,7 +288,7 @@
                         border: 1px solid #DADADA;
                         padding: .8em;
                         border-radius: .5em;
-                        font-size: 13px;
+                        font-size: var(--footer-text-fs);
                     }
                 }
             }
@@ -300,11 +306,11 @@
             grid-template-columns: repeat(2,1fr);
 
             p{
-                font-size: .9em;
+                font-size: var(--footer-text-fs);
             }
 
             h3 {
-                font-size: 1.1em;
+                font-size: var(--footer-header-fs);
             }
 
             .contain1 {
@@ -414,6 +420,15 @@
 
 
 @media only screen and (max-width: 1062px) {
+
+    :root {
+        --header-fs: 2.5rem;
+        --text-fs: 1rem;
+        --p-fs: 1rem;
+        --footer-header-fs: 1rem;
+        --footer-text-fs: .7rem;
+    }
+
     header {
         .wrapper1 {
             display: flex;
@@ -467,7 +482,7 @@
                            color: white;
                            display: block;
                            padding: .5em;
-                           font-size: 1.3em;
+                           font-size: 1.3rem;
                            text-align: right;
 
                            &:hover {
@@ -594,6 +609,11 @@
 
 
 @media only screen and (max-width: 960px) {
+
+    :root {
+        --header-fs: 2rem;
+    }
+
     header {
         padding: 1.5em 0.6em;
     }
@@ -632,4 +652,14 @@
         }
     }
 
+}
+
+@media only screen and (max-width: 300px) {
+    :root {
+        --header-fs: 1.5rem;
+        --text-fs: .7rem;
+        --p-fs: .7rem;
+        --footer-header-fs: .7rem;
+        --footer-text-fs: .5rem;
+    }
 }
