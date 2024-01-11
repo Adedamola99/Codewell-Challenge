@@ -15,7 +15,7 @@
     <ul>
       <li>Built with</li>
       <li>What I learned</li>
-      <li>useful resources</li>
+      <li>useful resource(s)</li>
       <li>Continued development</li>
     </ul>
   </li>
